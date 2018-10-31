@@ -293,9 +293,13 @@ console.log(eatFood("Laurie", "Byrne", "bulgogi"))
  * Console.log your result. 
 */
 
+var inches = 10.5
+
 function shoeSize(inches) {
-	return 
+	return inches * 2.54;
 }
+
+console.log(shoeSize(inches))
 
 /*
  * #15
@@ -306,8 +310,14 @@ function shoeSize(inches) {
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
- 
 
+var str = "believe you can and you're halfway there.";
+
+function allCaps(str) {
+	return str.toUpperCase();
+}
+
+console.log(allCaps(str))
 
 /*
  * #16
@@ -317,7 +327,13 @@ function shoeSize(inches) {
  * Console.log your result.
 */
 
+var str = "she doesn't even go here!"
 
+function oneCap(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+console.log(oneCap(str))
 
 /*
  * #17
@@ -330,7 +346,14 @@ function shoeSize(inches) {
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
+var age = 17;
+var canDrink = 21;
 
+function verifyDrinkingAge(age) {
+	return (age > 21);
+}
+
+console.log(verifyDrinkingAge(age))
 
 /**
  * #18
@@ -338,8 +361,16 @@ function shoeSize(inches) {
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
 
+var age = 17
+var canParty = (age > 21)
 
+function throwParty(canParty) {
+	if (canParty) {
+		return "Cheee Hoo! We going to da party!";
+	}
+	else {
+		return "Meh, see you at Starbucks.";
+	}
+}
 
-
-
-
+console.log(throwParty(canParty))
